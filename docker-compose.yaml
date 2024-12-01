@@ -23,11 +23,11 @@ services:
       - ./:/app:cached  
   db:
     image: postgres
-    container_name: livraria_db
+    container_name: livraria_db_2
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=admin123
-      - POSTGRES_DB=livraria_db
+      - POSTGRES_DB=livraria_db_2
     ports:
       - "5432:5432"
     volumes:
